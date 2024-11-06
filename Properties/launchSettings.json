@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Clinic": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:11807;http://localhost:11808"
+    }
+  }
+}
