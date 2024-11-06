@@ -70,3 +70,4 @@ C:\Users\HP\Desktop\api-project\final-clinic-api\Clinic\obj\Debug\net6.0\Clinic.
 C:\Users\HP\Desktop\api-project\final-clinic-api\Clinic\obj\Debug\net6.0\Clinic.genruntimeconfig.cache
 C:\Users\HP\Desktop\api-project\final-clinic-api\Clinic\obj\Debug\net6.0\ref\Clinic.dll
 C:\Users\HP\Desktop\api-project\final-clinic-api\Clinic\bin\Debug\net6.0\appsettings.json
+C:\Users\HP\Desktop\api-project\final-clinic-api\Clinic\obj\Debug\net6.0\Clinic.sourcelink.json

@@ -10,7 +10,6 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Cors.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace Clinic.Controllers
 {
@@ -37,14 +36,16 @@ namespace Clinic.Controllers
 
         // GET api/<DoctorController>/5
         [HttpGet("{id}")]
-        public async Task< ActionResult> Get(int id)
+        public async Task<ActionResult> Get(int id)
         {
-            if (_doctorService.GetDoctorAsync(id) == null)
+            var doctor = await _doctorService.GetDoctorAsync(id); 
+            if (doctor == null)
                 return NotFound();
-            var doctor = _doctorService.GetDoctorAsync(id);
-            var doctorDto = _mapper.Map<DoctorDto>(doctor);
+
+            var doctorDto = _mapper.Map<DoctorDto>(doctor); 
             return Ok(doctorDto);
         }
+
 
         // POST api/<DoctorController>
         [HttpPost]
